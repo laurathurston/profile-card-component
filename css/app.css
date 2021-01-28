@@ -119,3 +119,12 @@ body {
   color: hsl(0, 0%, 59%);
   margin-top: 20px;
 }
+
+@media (max-width: 375px) {
+  #top {
+    position: absolute;
+    z-index: -3;
+    top: -90vh;
+    left: -200vw;
+  }
+}

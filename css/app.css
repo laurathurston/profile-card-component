@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+/* background: url(../images/bg-pattern-top.svg) left -20% top -20% no-repeat, url(../images/bg-pattern-bottom.svg) right -10% bottom 150% no-repeat;
+    background-size: 40rem auto; */
+
+/* BACKGROUND  */
+body {
+  background-color: hsl(185, 75%, 39%);
+}
+
+#top {
+  position: absolute;
+  z-index: -3;
+  top: -70vh;
+  left: -20vw;
+}
+
+#bottom {
+  z-index: -2;
+  position: absolute;
+  top: 50vh;
+  left: 40vw;
+}
+
+/* CARD COMPONENT */
+.card-container {
+  min-height: 350px;
+  width: 350px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* CARD COMPONENT - HEADER */
+.card-header {
+  height: 225px;
+}
+.header-image {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.victor {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50px;
+  transform: translateY(-50%);
+  border: 5px solid white;
+}
+
+/* CARD COMPONENT - PERSONAL INFO */
+.card-text {
+  text-align: center;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.card-container .main-info {
+  height: 100px;
+  flex-direction: column;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* CARD COMPONENT - PERSONAL STATS */
+.card-container .personal-stats .stat {
+  height: 80px;
+  padding: 0 20px;
+  justify-content: space-around;
+  columns: 116px 3;
+  margin-top: 30px;
+}
+
+.card-container .personal-stats {
+  border-top: 2px solid rgba(125, 125, 125, 0.2);
+  display: flex;
+}
+
+.card-container .personal-stats .stat .stat-count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1rem;
+  column-count: 3;
+}
+
+.card-container .personal-stats .stat .stat-type {
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  padding-top: 5px;
+  color: hsl(0, 0%, 59%);
+}
+
+.age {
+  letter-spacing: 2px;
+  color: hsl(0, 0%, 59%);
+}
+
+.location {
+  letter-spacing: 2px;
+  color: hsl(0, 0%, 59%);
+  margin-top: 20px;
+}
+
+@media (max-width: 375px) {
+  #top {
+    position: absolute;
+    z-index: -3;
+    top: -90vh;
+    left: -200vw;
+  }
+}
